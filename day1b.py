@@ -41,7 +41,7 @@ def main(l):
             elif current_direction == "W":
                 position[0] -= 1
     print((start_position[0]-already_visited[0]) + (start_position[1]-already_visited[1]))
-    
+
 if __name__ == '__main__':
     l = [i.strip() for i in open("day1input.txt").read().split(",")]
     main(l)
