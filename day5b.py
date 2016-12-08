@@ -12,18 +12,17 @@ def main(s):
         _s = (s+str(i)).encode("utf-8")
         h = md5(_s)
         if h.hexdigest().startswith("00000"):
-            pos, val  = h.hexdigest()[5:6], h.hexdigest()[6:7]
+            pos, val  = h.hexdigest()[5], h.hexdigest()[6]
             if pos.isdigit():
                 pos = int(pos)
-                print(res[pos:pos+1])
-                if pos < len(res) and res[pos:pos+1] is None:
+                if pos < len(res) and res[pos] is None:
                     print(res, pos, val)
-                    res[pos:pos+1] = val
+                    res[pos] = val
         i += 1
     print("".join(res))
 
 
 if __name__ == '__main__':
-    s = "abc"
-    #s = "reyedfim"
+    #s = "abc"
+    s = "reyedfim"
     main(s)
