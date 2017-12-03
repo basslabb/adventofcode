@@ -4,7 +4,6 @@ def get_divided_value(l):
     l = [int(x) for x in l]
     l = list(permutations(l, r=2))
     for i in l:
-        print(i)
         if i[0] % i[1] == 0:
             return int(i[0] / i[1])
 
