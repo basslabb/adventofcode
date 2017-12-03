@@ -1,8 +1,9 @@
 def main(s):
-    print(s)
     _sum = 0
-    for i in range(0, len(s)):
-        i2 = 0 if i == len(s)-1 else i+1
+    l = len(s)
+    h = int(l/2)
+    for i in range(0, l):
+        i2 = (i + h) % l
         if s[i2] == s[i]:
             _sum += int(s[i])
     print(_sum)
