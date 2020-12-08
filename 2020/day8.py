@@ -35,14 +35,4 @@ def map_operation(operation, index, accumulator):
 
 if __name__ == "__main__":
     l = [parse_line(x) for x in open("day8.input.txt").read().split("\n")]
-    s = """nop +0
-acc +1
-jmp +4
-acc +3
-jmp -3
-acc -99
-acc +1
-jmp -4
-acc +6"""
-    #l = [parse_line(x) for x in s.split("\n")]
     main(l)
