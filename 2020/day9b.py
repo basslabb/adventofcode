@@ -24,25 +24,4 @@ def main(l, preamble_index=25):
 
 if __name__ == "__main__":
     l = [int(x) for x in open("day9.input.txt").read().split("\n")]
-    s = """35
-20
-15
-25
-47
-40
-62
-55
-65
-95
-102
-117
-150
-182
-127
-219
-299
-277
-309
-576"""
-    #l = [int(x) for x in s.split("\n")]
     main(l, 25)
