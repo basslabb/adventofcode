@@ -24,7 +24,6 @@ def map_game(s):
 
 def run_game(opponent, you):
     selection_score = score_map[you]
-    #print(you, opponent, selection_score, opponent+"_"+you)
     if opponent == you:
         return 3 + selection_score
     match opponent+"_"+you:
@@ -35,8 +34,6 @@ def run_game(opponent, you):
 
 
 def main(l):
-    # for x, y in l:
-    #     print(run_game(x, y))
     print(sum(run_game(x, y) for x, y in l))
 
 
